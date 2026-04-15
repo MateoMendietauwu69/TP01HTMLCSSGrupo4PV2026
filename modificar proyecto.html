@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Modificar Proyecto</title>
+    </head>
+    <body bgcolor="pink">
+       
+        <header>
+            <table width="100%">
+                <tr>
+                    <td bgcolor="gray" align="center">
+                        <h1>
+                            <font face="Courier New" size="7">MODIFICACIÓN DE PROYECTO</font>
+                        </h1>
+                    </td>
+                </tr>
+            </table>
+        </header>
+        <nav>
+            <table align="center" width="50%">
+                <tr>
+                    <td bgcolor="#9b59b6" width="25%" align="center"><a href="index.html"><font face="Arial" size="5">MENU</font></a></li>
+                    <td bgcolor="#9b59b6" width="25%" align="center"><a href="perfil.html"><font face="Arial" size="5">PERFIL</font></a></li>
+                    <td bgcolor="#9b59b6" width="25%" align="center"><a href="proyectos.html"><font face="Arial" size="5">PROYECTOS</font></a></li>
+                    <td bgcolor="#9b59b6" width="25%" align="center"><a href="detalles.html"><font face="Arial" size="5">DETALLES</font></a></li>
+                </tr>
+            </table>
+        </nav>
+        <table align="center" width="50%">
+            <tr>
+                <td width="50%" bgcolor="#656868">
+                         <h2>
+                            <font face="Courier New" color="white"><center>CREAR PROYECTO</center></font>
+                        </h2>
+                </td>
+                <td width="50%" bgcolor="#756868">
+                        <h2>
+                            <font face="Courier New" color="white"><center>EDITAR PROYECTO</center></font>
+                        </h2>
+                </td>
+            </tr>
+        </table>
+        <main>
+            <table width="100%">
+                <tr>
+                    <td width="75%">
+                        <table width="100%">
+                            <tr>
+                                <td align="center" width="50%" bgcolor="#656868" id="tcr">
+                                    <h3><font face="Arial" color="white" size="5"><center>NUEVO PROYECTO</center></font></h3>
+                                    <form>
+                                        <label for="name"><font color="white">Titulo:</font></label>
+                                        <input type="text" id="name" required>
+                                        <br /><br />
+                                        <label for="priv"><font color="white">Privado</font></label>
+                                        <input type="checkbox" id="priv" onclick="bloc()" required>
+                                        <label for="pub"><font color="white">Publico</font></label>
+                                        <input type="checkbox" id="pub" onclick="bloc()" required>
+                                        <br /><br />
+                                        <label for="pas"><font color="white">Clave:</font></label>
+                                        <input type="password" id="pas" required>
+                                        <br /><br />
+                                        <label for="com"><font color="white">Participantes:</font></label><br />
+                                        <textarea rows="2" cols="20" id="com"></textarea>
+                                        <br /><br />
+                                        <label for="jef"><font color="white">Lider:</font></label>
+                                        <input type="text" id="jef" required>
+                                        <br /><br />
+                                        <label for="obj"><font color="white">Objetivo:</font></label><br />
+                                        <textarea rows="5" cols="20" id="obj"></textarea>
+                                        <br /><br />
+                                        <label for="dat"><font color="white">Fecha de inicio:</font></label>
+                                        <input type="date" id="dat">
+                                        <br /><br />
+                                        <input type="submit">
+                                        <br /><br />
+                                    </form>
+                                </td>
+                                <td align="center" width="50%" bgcolor="#756868" id="tedi">
+                                    <h3><font face="Arial" color="white" size="5"><center>EDITAR PROYECTO</center></font></h3>
+                                    <form>
+                                        <label for="priv"><font color="white">Privado</font></label>
+                                        <input type="checkbox" id="priv" onclick="bloc()" required>
+                                        <label for="pub"><font color="white">Publico</font></label>
+                                        <input type="checkbox" id="pub" onclick="bloc()" required>
+                                        <br /><br />
+                                        <label for="pas"><font color="white">Clave:</font></label>
+                                        <input type="password" id="pas" required>
+                                        <br /><br />
+                                        <label for="name"><font color="white">Titulo:</font></label>
+                                        <input type="text" id="name" required>
+                                        <br /><br />
+                                        <label for="jef"><font color="white">Lider:</font></label>
+                                        <input type="text" id="jef" required>
+                                        <br /><br />
+                                        <label for="com"><font color="white">Participantes:</font></label><br />
+                                        <textarea rows="2" cols="20" id="com"></textarea>
+                                        <br /><br />
+                                        <label for="obj"><font color="white">Objetivo:</font></label><br />
+                                        <textarea rows="5" cols="20" id="obj"></textarea>
+                                        <br /><br />
+                                        <label><font color="white">Estado</font></label><br />
+                                        <label for="priv"><font color="white">Finalizado</font></label>
+                                        <input type="checkbox" id="priv" onclick="bloc()" required>
+                                        <label for="pub"><font color="white">En curso</font></label>
+                                        <input type="checkbox" id="pub" onclick="bloc()" required>
+                                        <br /><br />
+                                        <input type="submit">
+                                        <br /><br />
+                                    </form>
+                                </td>
+                            </tr>
+                        </table>
+                        
+                    </td>
+                    <td align="center" width="25%" bgcolor="#996868">
+                        <h3><font face="Arial" size="5">PROYECTOS GUARDADOS</font></h3>
+                        <ul>
+                            <li>
+                                <h4><font face="Arial">Establecimiento en Residencia</font></h4>
+                                <p>
+                                    Busqueda y mudanza a una residencia para comonidad de trabajo
+                                </p>
+                            </li>
+                            
+                            <li>
+                                <h4><font face="Arial">Creacion de Videojuego</font></h4>
+                                <p>
+                                    Desarrollo del primervideojuego independiente con estilo retro
+                                </p>
+                            </li>
+                            <li>
+                                <h4><font face="Arial">Marketing Digital</font></h4>
+                                <p>
+                                    Ideas de videos o publicaciones para los videojuegos o la empresa
+                                </p>
+                            </li>
+                            <li>
+                                <h4><font face="Arial">Compra y Adquisicion de Equipos para trabajar</font></h4>
+                                <p>
+                                    Compra y adquisición de equipos necesarios para el desarrollo de proyectos y la empresa
+                                </p>
+                            </li>
+                            <li>
+                                <h4><font face="Arial">Creacion de Pagina Web</font></h4>
+                                <p>
+                                    Desarrollo de la pagina web para mostrar los proyectos y el avance de la empresa
+                                </p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </main>
+        <footer>
+            <table width="100%">
+                <tr>
+                    <td width="33%" bgcolor="999868" align="center">
+                        <h3><font face="Courier New">comentarios</font></h3>
+                        <article>
+                            sin comentarios
+                        </article>
+                    </td>
+                    <td width="33%" bgcolor="999868" align="center">
+                        <h3><font face="Courier New">contactos</font></h3>
+                        <article>
+                            <h4>Lider: Mateo Mendieta</h4>
+                            <p>- Erick Neuman</p>
+                            <p>- Lautaro Mercado</p>
+                            <p>- Ignacio Jorqui</p>
+                            <p>- Octavio Lamaz</p>
+                            <p>- David Palacios</p>
+                        </article>
+                    </td>
+                    <td width="33%" bgcolor="999868" align="center">
+                        <h3><font face="Courier New">referencias</font></h3>
+                        <article>
+                            <h4>Links del curso</h4>
+                            <a href="https://www.youtube.com/watch?v=HGTJBPNC-Gw">HTML,CSS</a>
+                        </article>
+                    </td>
+                </tr>
+            </table>
+        </footer>
+    </body>
+</html>
