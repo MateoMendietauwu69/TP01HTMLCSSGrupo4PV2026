@@ -4,5 +4,5 @@ Mateo Ignacio Mendieta Morales  -    MateoMendietauwu69                  - coord
 Lautaro Jose Luis Mercado       -    Lautby08                            - proyectos.html
 David Ismael Palacios Juarez    -    DavidPalaciosCv                     - 
 Erick Alejandro Neuman          -    Erickscpp                           - perfil.html
-Octavio Cristian Lamas Mendez   -                                        - index.html
+Octavio Cristian Lamas Mendez   -    octaviolamas                        - index.html
 Ignacio Elias Jorqui            -    jorquig                             - detalle.html
