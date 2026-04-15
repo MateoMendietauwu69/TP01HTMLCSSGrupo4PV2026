@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorador de Proyectos</title>
+</head>
+<body>
+
+    <header>
+        <h1>Explorador de Proyectos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="link.html">Detalles</a></li>
+                <li><a href="link.html">Perfiles</a></li>
+                <li><a href="link.html">Extra</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section id="filtros">
+            <h2>Filtrar Proyectos</h2>
+            <form action="#" method="get">
+                <label for="categoria">Categoría:</label>
+                <select id="categoria" name="categoria">
+                    <option value="todos">Todas</option>
+                    <option value="extras">Extras</option>
+                    <option value="videojuegos">Videojuegos</option>
+                    <option value="paginas">Paginas</option>
+                    <option value="marketing">Marketing</option>
+                </select>
+
+                <label for="anio">Año:</label>
+                <input type="number" id="anio" name="anio" min="2020" max="2026" placeholder="Ej: 2024">
+
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado">
+                    <option value="todos">Todos</option>
+                    <option value="en-curso">En curso</option>
+                    <option value="finalizado">Finalizado</option>
+                </select>
+
+                <button type="submit">Aplicar Filtros</button>
+                <button type="reset">Limpiar</button>
+            </form>
+        </section>
+
+        <hr>
+        <article>
+                <h3>Proyecto de Establecimiento en Residencia</h3>
+                <img src="casagamer.jpg" alt="Imagen de Casa Gamer" width="150">
+                <p><strong>Descripción:</strong> Busqueda y mudanza a una residencia para comonidad de trabajo</p>
+                <p>Categoría: <em>Extras</em></p>
+                <a href="#">Ver detalle del proyecto</a>
+            </article>
+            <br>
+        
+        <article>
+                <h3>Proyecto de Creacion de Videojuego</h3>
+                <img src="vistadevideojuego.jpeg" alt="Imagen de videojuego retro" width="150">
+                <p><strong>Descripción:</strong> Desarrollo del primervideojuego independiente con estilo retro</p>
+                <p>Categoría: <em>Videojuegos</em></p>
+                <a href="#">Ver detalle del proyecto</a>
+            </article>
+            <br>
+        <article>
+                <h3>Proyecto de Marketing Digital</h3>
+                <img src="marketing.jpg" alt="Ideas para publicidad" width="150">
+                <p><strong>Descripción:</strong> Ideas de videos o publicaciones para los videojuegos o la empresa</p>
+                <p>Categoría: <em>Marketing</em></p>
+                <a href="#">Ver detalle del proyecto</a>
+            </article>
+            <br>
+        <article>
+                <h3>Proyecto de Compra y Adquisicion de Equipos para trabajar</h3>
+                <img src="equipos.jpg" alt="Imagenes de equipos para el desarrollo de proyectos" width="150">
+                <p><strong>Descripción:</strong> Compra y adquisición de equipos necesarios para el desarrollo de proyectos y la empresa</p>
+                <p>Categoría: <em>Extras</em></p>
+                <a href="#">Ver detalle del proyecto</a>
+            </article>
+            <br>
+
+        <article>
+                <h3>Proyecto de Creacion de Pagina Web</h3>
+                <img src="paginaweb.jpg" alt="Diseño de pagina web" width="150">
+                <p><strong>Descripción:</strong> Desarrollo de la pagina web para mostrar los proyectos y el avance de la empresa</p>
+                <p>Categoría: <em>Paginas</em></p>
+                <a href="#">Ver detalle del proyecto</a>
+            </article>
+            <br>
+        
+    </main>
+
+    <hr>
+
+   
+
+</body>
+</html>
