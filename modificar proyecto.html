@@ -4,185 +4,153 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Modificar Proyecto</title>
+        <link rel="stylesheet" href="css\modificar proyecto.css">
+         <link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Bangers&display=swap" rel="stylesheet">
     </head>
-    <body bgcolor="pink">
+    <body>
        
         <header>
-            <table width="100%">
-                <tr>
-                    <td bgcolor="gray" align="center">
-                        <h1>
-                            <font face="Courier New" size="7">MODIFICACIÓN DE PROYECTO</font>
-                        </h1>
-                    </td>
-                </tr>
-            </table>
+            <h1 class="titulo">
+                <span id="Titu">M</span>
+                <span id="Titu">O</span>
+                <span id="Titu">D</span>
+                <span id="Titu">I</span>
+                <span id="Titu">F</span>
+                <span id="Titu">I</span>
+                <span id="Titu">C</span>
+                <span id="Titu">A</span>
+                <span id="Titu">R</span>
+                <span id="Titu">P</span>
+                <span id="Titu">R</span>
+                <span id="Titu">O</span>
+                <span id="Titu">Y</span>
+                <span id="Titu">E</span>
+                <span id="Titu">C</span>
+                <span id="Titu">T</span>
+                <span id="Titu">O</span>
+                <span id="Titu">S</span>
+            </h1>
         </header>
-        <nav>
-            <table align="center" width="50%">
-                <tr>
-                    <td bgcolor="#9b59b6" width="25%" align="center"><a href="index.html"><font face="Arial" size="5">MENU</font></a></li>
-                    <td bgcolor="#9b59b6" width="25%" align="center"><a href="perfil.html"><font face="Arial" size="5">PERFIL</font></a></li>
-                    <td bgcolor="#9b59b6" width="25%" align="center"><a href="proyectos.html"><font face="Arial" size="5">PROYECTOS</font></a></li>
-                    <td bgcolor="#9b59b6" width="25%" align="center"><a href="detalle.html"><font face="Arial" size="5">DETALLES</font></a></li>
-                </tr>
-            </table>
+        <nav class="navegacion">
+            <a href="index.html" id="enlace">Menu</a>
+            <a href="perfil.html" id="enlace">Perfiles</a>
+            <a href="proyectos.html" id="enlace">Proyectos</a>
+            <a href="detalle.html" id="enlace">Detalles</a>
         </nav>
-        <table align="center" width="50%">
-            <tr>
-                <td width="50%" bgcolor="#656868">
-                         <h2>
-                            <font face="Courier New" color="white"><center>CREAR PROYECTO</center></font>
-                        </h2>
-                </td>
-                <td width="50%" bgcolor="#756868">
-                        <h2>
-                            <font face="Courier New" color="white"><center>EDITAR PROYECTO</center></font>
-                        </h2>
-                </td>
-            </tr>
-        </table>
+        <div class="selec">
+            <h2>CREAR PROYECTO</h2>
+            <h2>EDITAR PROYECTO</h2>
+        </div>
         <main>
-            <table width="100%">
-                <tr>
-                    <td width="75%">
-                        <table width="100%">
-                            <tr>
-                                <td align="center" width="50%" bgcolor="#656868" id="tcr">
-                                    <h3><font face="Arial" color="white" size="5"><center>NUEVO PROYECTO</center></font></h3>
-                                    <form>
-                                        <label for="name"><font color="white">Titulo:</font></label>
-                                        <input type="text" id="name" required>
-                                        <br /><br />
-                                        <label for="priv"><font color="white">Privado</font></label>
-                                        <input type="checkbox" id="priv" onclick="bloc()" required>
-                                        <label for="pub"><font color="white">Publico</font></label>
-                                        <input type="checkbox" id="pub" onclick="bloc()" required>
-                                        <br /><br />
-                                        <label for="pas"><font color="white">Clave:</font></label>
-                                        <input type="password" id="pas" required>
-                                        <br /><br />
-                                        <label for="com"><font color="white">Participantes:</font></label><br />
-                                        <textarea rows="2" cols="20" id="com"></textarea>
-                                        <br /><br />
-                                        <label for="jef"><font color="white">Lider:</font></label>
-                                        <input type="text" id="jef" required>
-                                        <br /><br />
-                                        <label for="obj"><font color="white">Objetivo:</font></label><br />
-                                        <textarea rows="5" cols="20" id="obj"></textarea>
-                                        <br /><br />
-                                        <label for="dat"><font color="white">Fecha de inicio:</font></label>
-                                        <input type="date" id="dat">
-                                        <br /><br />
-                                        <input type="submit">
-                                        <br /><br />
-                                    </form>
-                                </td>
-                                <td align="center" width="50%" bgcolor="#756868" id="tedi">
-                                    <h3><font face="Arial" color="white" size="5"><center>EDITAR PROYECTO</center></font></h3>
-                                    <form>
-                                        <label for="priv"><font color="white">Privado</font></label>
-                                        <input type="checkbox" id="priv" onclick="bloc()" required>
-                                        <label for="pub"><font color="white">Publico</font></label>
-                                        <input type="checkbox" id="pub" onclick="bloc()" required>
-                                        <br /><br />
-                                        <label for="pas"><font color="white">Clave:</font></label>
-                                        <input type="password" id="pas" required>
-                                        <br /><br />
-                                        <label for="name"><font color="white">Titulo:</font></label>
-                                        <input type="text" id="name" required>
-                                        <br /><br />
-                                        <label for="jef"><font color="white">Lider:</font></label>
-                                        <input type="text" id="jef" required>
-                                        <br /><br />
-                                        <label for="com"><font color="white">Participantes:</font></label><br />
-                                        <textarea rows="2" cols="20" id="com"></textarea>
-                                        <br /><br />
-                                        <label for="obj"><font color="white">Objetivo:</font></label><br />
-                                        <textarea rows="5" cols="20" id="obj"></textarea>
-                                        <br /><br />
-                                        <label><font color="white">Estado</font></label><br />
-                                        <label for="priv"><font color="white">Finalizado</font></label>
-                                        <input type="checkbox" id="priv" onclick="bloc()" required>
-                                        <label for="pub"><font color="white">En curso</font></label>
-                                        <input type="checkbox" id="pub" onclick="bloc()" required>
-                                        <br /><br />
-                                        <input type="submit">
-                                        <br /><br />
-                                    </form>
-                                </td>
-                            </tr>
-                        </table>
-                        
-                    </td>
-                    <td align="center" width="25%" bgcolor="#996868">
-                        <h3><font face="Arial" size="5">PROYECTOS GUARDADOS</font></h3>
-                        <ul>
-                            <li>
-                                <h4><font face="Arial">Establecimiento en Residencia</font></h4>
-                                <p>
-                                    Busqueda y mudanza a una residencia para comonidad de trabajo
-                                </p>
-                            </li>
-                            
-                            <li>
-                                <h4><font face="Arial">Creacion de Videojuego</font></h4>
-                                <p>
-                                    Desarrollo del primervideojuego independiente con estilo retro
-                                </p>
-                            </li>
-                            <li>
-                                <h4><font face="Arial">Marketing Digital</font></h4>
-                                <p>
-                                    Ideas de videos o publicaciones para los videojuegos o la empresa
-                                </p>
-                            </li>
-                            <li>
-                                <h4><font face="Arial">Compra y Adquisicion de Equipos para trabajar</font></h4>
-                                <p>
-                                    Compra y adquisición de equipos necesarios para el desarrollo de proyectos y la empresa
-                                </p>
-                            </li>
-                            <li>
-                                <h4><font face="Arial">Creacion de Pagina Web</font></h4>
-                                <p>
-                                    Desarrollo de la pagina web para mostrar los proyectos y el avance de la empresa
-                                </p>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
+            <div class="cuerpo">
+                <form id="cuest">
+                    <h3 class="neg">NUEVO PROYECTO</h3>
+                    <br /><br />
+                    <label for="name" class="neg">Titulo:</label>
+                    <input type="text" id="name" required>
+                    <br /><br />
+                    <label for="priv" class="neg">Privado</label>
+                    <input type="checkbox" id="priv" required>
+                    <label for="pub" class="neg">Publico</label>
+                    <input type="checkbox" id="pub" required>
+                    <br /><br />
+                    <label for="pas" class="neg">Clave:</label>
+                    <input type="password" id="pas" required>
+                    <br /><br />
+                    <label for="com" class="neg">Participantes:</label><br />
+                    <textarea rows="2" cols="20" id="com"></textarea>
+                    <br /><br />
+                    <label for="jef" class="neg">Lider:</label>
+                    <input type="text" id="jef" required>
+                    <br /><br />
+                    <label for="obj" class="neg">Objetivo:</label><br />
+                    <textarea rows="5" cols="20" id="obj"></textarea>
+                    <br /><br />
+                    <label for="dat" class="neg">Fecha de inicio:</label>
+                    <input type="date" id="dat">
+                    <br /><br />
+                    <input type="submit" id="bot">
+                </form>
+                <form id="cuest">
+                    <h3 class="neg">EDITAR PROYECTO</h3>
+                    <br /><br />
+                    <label for="privE" class="neg">Privado</label>
+                    <input type="checkbox" id="privE" required>
+                    <label for="pubE" class="neg">Publico</label>
+                    <input type="checkbox" id="pubE" required>
+                    <br /><br />
+                    <label for="pasE" class="neg">Clave:</label>
+                    <input type="password" id="pasE" required>
+                    <br /><br />
+                    <label for="nameE" class="neg">Titulo:</label>
+                    <input type="text" id="nameE" required>
+                    <br /><br />
+                    <label for="jefE" class="neg">Lider:</label>
+                    <input type="text" id="jefE" required>
+                    <br /><br />
+                    <label for="comE" class="neg">Participantes:</label><br />
+                    <textarea rows="2" cols="20" id="comE"></textarea>
+                    <br /><br />
+                    <label for="objE" class="neg">Objetivo:</label><br />
+                    <textarea rows="5" cols="20" id="objE"></textarea>
+                    <br /><br />
+                    <label class="neg">Estado</label><br />
+                    <label for="finish" class="neg">Finalizado</label>
+                    <input type="checkbox" id="finish" required>
+                    <label for="course" class="neg">En curso</label>
+                    <input type="checkbox" id="course" required>
+                    <br /><br />
+                    <input type="submit" id="bot">
+                    <br /><br />
+                </form>
+                <article class="pro">
+                    <h3>PROYECTOS GUARDADOS</h3>
+                    <div class="contenido">
+                        <p>
+                            <h4>Establecimiento en Residencia</h4>
+                            Busqueda y mudanza a una residencia para comonidad de trabajo
+                        </p>
+                        <p>
+                            <h4>Creacion de Videojuego</h4>
+                            Desarrollo del primer videojuego independiente con estilo retro
+                        </p>
+                        <p>
+                            <h4>Marketing Digital</h4>
+                            Ideas de videos o publicaciones para los videojuegos o la empresa
+                        </p>
+                        <p>
+                            <h4>Adquisicion de Equipos para trabajar</h4>
+                            Adquisición de equipos necesarios para el desarrollo de proyectos y la empresa
+                        </p>
+                        <p>
+                            <h4>Creacion de Pagina Web</h4>
+                            Desarrollo de la pagina web para mostrar los proyectos y el avance de la empresa
+                        </p>
+                    </div>
+                </article>
+            </div>
         </main>
         <footer>
-            <table width="100%">
-                <tr>
-                    <td width="33%" bgcolor="999868" align="center">
-                        <h3><font face="Courier New">comentarios</font></h3>
-                        <article>
-                            sin comentarios
-                        </article>
-                    </td>
-                    <td width="33%" bgcolor="999868" align="center">
-                        <h3><font face="Courier New">contactos</font></h3>
-                        <article>
-                            <h4>Lider: Mateo Mendieta</h4>
-                            <p>- Erick Neuman</p>
-                            <p>- Lautaro Mercado</p>
-                            <p>- Ignacio Jorqui</p>
-                            <p>- Octavio Lamaz</p>
-                            <p>- David Palacios</p>
-                        </article>
-                    </td>
-                    <td width="33%" bgcolor="999868" align="center">
-                        <h3><font face="Courier New">referencias</font></h3>
-                        <article>
-                            <h4>Links del curso</h4>
-                            <a href="https://www.youtube.com/watch?v=HGTJBPNC-Gw">HTML,CSS</a>
-                        </article>
-                    </td>
-                </tr>
-            </table>
+            <div class="end">
+                <article id="fi">
+                    <h3>comentarios</h3>
+                    <p>sin comentarios</p>
+                </article>
+                <article id="fi">
+                    <h3>contactos</h3>
+                    <h4>Lider: Mateo Mendieta</h4>
+                    <p>- Erick Neuman</p>
+                    <p>- Lautaro Mercado</p>
+                    <p>- Ignacio Jorqui</p>
+                    <p>- Octavio Lamaz</p>
+                    <p>- David Palacios</p>
+                </article>
+                <article id="fi">
+                    <h3>referencias</h3>
+                    <h4>Links del curso</h4>
+                    <p><a href="https://www.youtube.com/watch?v=HGTJBPNC-Gw">HTML,CSS</a></p>
+                </article>    
+            </div>
         </footer>
     </body>
 </html>
