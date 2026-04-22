@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Detalle del Proyecto – Escuela de Minas</title>
-</head>
+
+  <link rel="stylesheet" href="css/detalle.css" />
 
 <body>
 
@@ -15,7 +16,6 @@
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="proyectos.html">Proyectos</a></li>
-        <li><a href="detalle.html">Detalle</a></li>
         <li><a href="perfil.html">Perfil</a></li>
         <li><a href="modificar proyecto.html">Modificar Proyectos</a></li>
       </ul>
@@ -23,15 +23,26 @@
   </header>
 
   <main>
-
     <article>
-      <section>
-        <h2>Sistema de Gestión Escuela de Minas</h2>
+
+      <section class="info-proyecto">
+        <h2>
+          Sistema de Gestión Escuela de Minas
+          <!-- Estilo en línea (Inline): aplicado directamente al elemento -->
+          <span class="estado-badge" style="font-size: 0.75rem; padding: 0.15rem 0.5rem;">En curso</span>
+        </h2>
         <p><strong>Fecha de inicio:</strong> 14/04/2026</p>
-        <p><strong>Autores:</strong> David Palacios, Erick Neuman, Ignacio Jorqui, Mateo Mendieta, Lautaro Mercado,
-          Octavio Lamas</p>
+        <p>
+          <strong>Autores:</strong>
+          <!-- Estilo inline para separar visualmente la lista de autores -->
+          <span style="color: #555555; font-style: italic;">
+            David Palacios, Erick Neuman, Ignacio Jorqui, Mateo Mendieta, Lautaro Mercado, Octavio Lamas
+          </span>
+        </p>
       </section>
-      <section>
+
+      <!-- Sección: descripción -->
+      <section class="descripcion">
         <h3>Descripción del Proyecto</h3>
         <p>
           El presente proyecto tiene como objetivo principal desarrollar una plataforma web para la gestión
@@ -46,9 +57,7 @@
           y facilitar la entrega y seguimiento de tareas dentro del entorno educativo.
         </p>
       </section>
-
-      <!-- 3. LISTA DE RECURSOS -->
-      <section>
+      <section id="recursos">
         <h3>Recursos del Proyecto</h3>
         <ul>
           <li><a href="#">Informe Final (PDF)</a></li>
@@ -57,9 +66,7 @@
           <li><a href="#">Presentación del proyecto (PPT)</a></li>
         </ul>
       </section>
-
-      <!-- 4. SECCIÓN DEL EQUIPO -->
-      <section>
+      <section id="equipo">
         <h3>Equipo de Trabajo</h3>
         <table>
           <thead>
@@ -69,7 +76,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr class="fila-lider">
               <td>Mateo Mendieta</td>
               <td>Líder del proyecto</td>
             </tr>
@@ -98,7 +105,6 @@
       </section>
 
     </article>
-
   </main>
 
   <footer>
@@ -106,5 +112,4 @@
   </footer>
 
 </body>
-
 </html>
