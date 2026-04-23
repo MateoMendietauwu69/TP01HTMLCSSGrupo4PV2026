@@ -1,0 +1,244 @@
+
+/* Variables CSS globales */
+:root {
+  --color-primario: #E8600A;
+  --color-secundario: #f58235;
+  --color-fondo: #f5f5f5;
+  --color-blanco: #ffffff;
+  --color-texto: #222222;
+  --color-texto-suave: #666666;
+  --color-borde: #dddddd;
+  --fuente-principal: Arial, sans-serif;
+  --radio-borde: 6px;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  min-height: 100vh;
+
+  /* CSS Grid para la estructura general de la página */
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+/* HEADER */
+header {
+  grid-area: header;
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  padding: 1rem 2rem;
+
+  /* Flexbox para alinear título y nav */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+header h1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* NAVEGACIÓN */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--color-blanco);
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radio-borde);
+  font-size: 0.9rem;
+  border: 1px solid transparent;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: var(--color-blanco);
+}
+
+nav a:active {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+/* MAIN */
+main {
+  grid-area: main;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+
+/* ARTICLE / SECCIONES */
+article {
+  display: grid;
+  gap: 1.5rem;
+}
+
+section {
+  background-color: var(--color-blanco);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-borde);
+  padding: 1.5rem;
+}
+
+section h2 {
+  font-size: 1.4rem;
+  color: var(--color-primario);
+  margin-bottom: 0.75rem;
+  border-bottom: 2px solid var(--color-secundario);
+  padding-bottom: 0.4rem;
+}
+
+section h3 {
+  font-size: 1.1rem;
+  color: var(--color-primario);
+  margin-bottom: 1rem;
+}
+
+section p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--color-texto-suave);
+  margin-bottom: 0.75rem;
+}
+
+section p:last-child {
+  margin-bottom: 0;
+}
+
+/* ================================
+   INFO DEL PROYECTO (clase)
+================================ */
+.info-proyecto p {
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+}
+
+/* ================================
+   LISTA DE RECURSOS
+================================ */
+#recursos ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#recursos ul li a {
+  display: block;
+  padding: 0.6rem 1rem;
+  background-color: var(--color-fondo);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-borde);
+  color: var(--color-texto);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+
+#recursos ul li a:hover {
+  background-color: var(--color-secundario);
+  border-color: var(--color-primario);
+  color: var(--color-blanco);
+}
+
+#recursos ul li a:active {
+  background-color: var(--color-primario);
+}
+
+/* ================================
+   TABLA DEL EQUIPO
+================================ */
+#equipo table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+#equipo th {
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  text-align: left;
+  padding: 0.65rem 1rem;
+}
+
+#equipo th:first-child {
+  border-radius: var(--radio-borde) 0 0 0;
+}
+
+#equipo th:last-child {
+  border-radius: 0 var(--radio-borde) 0 0;
+}
+
+#equipo td {
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid var(--color-borde);
+  color: var(--color-texto);
+}
+
+#equipo tr:last-child td {
+  border-bottom: none;
+}
+
+#equipo tbody tr:hover {
+  background-color: #fff4ee;
+}
+
+/* FOOTER */
+footer {
+  grid-area: footer;
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+}
+/* Descripción con texto justificado */
+.descripcion p {
+  text-align: justify;
+}
+
+/* Badge de estado del proyecto */
+.estado-badge {
+  display: inline-block;
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border: 1px solid #a5d6a7;
+  border-radius: 4px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+/* Fila del líder resaltada */
+.fila-lider td {
+  font-weight: bold;
+  color: #E8600A;
+}
